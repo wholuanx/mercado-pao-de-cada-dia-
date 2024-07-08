@@ -1,0 +1,12 @@
+fila = ["Matteo", "Lua", "Jhonathan", "Malu"]
+
+
+while True :    
+    atendente = str(input(" digite um nome: "))
+    cliente = str(input(" Deseja finalizar sua lista? (sim ou não): "))
+    fila.append(atendente)
+    if cliente == "sim":
+        break
+    if atendente in fila:
+        fila.pop(0)
+print(fila)
